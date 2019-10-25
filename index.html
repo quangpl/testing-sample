@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Home Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
@@ -12,25 +14,15 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
+      <a class="navbar-brand" id="logo-text" href="#">EZLIFE</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-<li>  <div class="dropdown">
-    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="#">Normal</a></li>
-      <li class="disabled"><a href="#">Disabled</a></li>
-      <li class="active"><a href="#">Active</a></li>
-      <li><a href="#">Normal</a></li>
-    </ul>
-  </div></li>
-      <li><a href="#">Page 2</a></li>
+<li><a href="/register.html">Register</a></li>
     </ul>
     <form class="navbar-form navbar-left" action="/action_page.php">
       <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search" name="search">
+        <input id="search-input" type="text" class="form-control" placeholder="Search" name="search">
         <div class="input-group-btn">
           <button class="btn btn-default" type="submit">
             <i class="glyphicon glyphicon-search"></i>
@@ -41,9 +33,9 @@
   </div>
 </nav>
 <div class="jumbotron text-center">
-  <h1>My First Bootstrap Page</h1>
+  <h1 id="header-title">My First Home Page</h1>
   <p>Resize this responsive page to see the effect!</p> 
-  <button type="button" class="btn btn-primary btn -lg" data-toggle="tooltip" title="Đây là nút!">Primary</button>
+  <button type="button" class="btn btn-primary btn -lg" data-toggle="tooltip" title="Đây là nút!">Go</button>
 
 </div>
   
@@ -51,28 +43,27 @@
   <div class="row">
     <div class="col-sm-4">
       <h3>Column 1</h3>
-     <img src="cinqueterre.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+     <img id="image1" src="https://i.imgur.com/yqmmbIf.png" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
     <div class="col-sm-4">
       <h3>Column 2</h3>
-      <img src="cinqueterre.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+      <img src="https://i.imgur.com/ZIpTndc.png" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
     <div class="col-sm-4">
       <h3>Column 3</h3>        
-<img src="cinqueterre.jpg" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+<img src="https://i.imgur.com/g7mmDfi.png" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
     </div>
   </div>
 </div>
 
 </body>
-<script>
+
 <script>
 $(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip();
 });
 </script>
-<script>
 </html>
